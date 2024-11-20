@@ -1,0 +1,320 @@
+{
+    "icecreams": [
+        {
+            "id": 1,
+            "flavour": "Vanilla",
+            "description": "Classic vanilla ice cream with rich creamy texture.",
+            "toppings": [
+                "Chocolate Chips",
+                "Sprinkles"
+            ],
+            "price": 3.99,
+            "image": "https://example.com/images/vanilla.png",
+            "isFeatured": true,
+            "categories": [
+                "Classic",
+                "Creamy"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Vanilla Extract",
+                    "quantity": "2 teaspoons"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "flavour": "Chocolate",
+            "description": "Rich chocolate ice cream made with premium cocoa.",
+            "toppings": [
+                "Brownie Chunks",
+                "Chocolate Syrup"
+            ],
+            "price": 4.49,
+            "image": "https://example.com/images/chocolate.png",
+            "isFeatured": false,
+            "categories": [
+                "Rich",
+                "Indulgent"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Cocoa Powder",
+                    "quantity": "3 tablespoons"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "flavour": "Strawberry",
+            "description": "Fresh strawberry ice cream with real fruit pieces.",
+            "toppings": [
+                "Whipped Cream",
+                "Fresh Strawberries"
+            ],
+            "price": 4.19,
+            "image": "https://example.com/images/strawberry.png",
+            "isFeatured": true,
+            "categories": [
+                "Fruity",
+                "Refreshing"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Strawberries",
+                    "quantity": "100g"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "flavour": "Mint Chocolate Chip",
+            "description": "Cool mint ice cream with chocolate chunks.",
+            "toppings": [
+                "Mint Leaves",
+                "Chocolate Chips"
+            ],
+            "price": 4.79,
+            "image": "https://example.com/images/mint_chocolate_chip.png",
+            "isFeatured": false,
+            "categories": [
+                "Fresh",
+                "Unique"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Mint Extract",
+                    "quantity": "1 teaspoon"
+                },
+                {
+                    "name": "Chocolate",
+                    "quantity": "50g"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "flavour": "Caramel Swirl",
+            "description": "Creamy caramel ice cream with a swirl of caramel sauce.",
+            "toppings": [
+                "Caramel Drizzle",
+                "Sea Salt"
+            ],
+            "price": 4.99,
+            "image": "https://example.com/images/caramel_swirl.png",
+            "isFeatured": true,
+            "categories": [
+                "Sweet",
+                "Decadent"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Caramel Sauce",
+                    "quantity": "3 tablespoons"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "flavour": "Pistachio",
+            "description": "Nutty pistachio ice cream made with real pistachios.",
+            "toppings": [
+                "Crushed Pistachios",
+                "Honey Drizzle"
+            ],
+            "price": 5.49,
+            "image": "https://example.com/images/pistachio.png",
+            "isFeatured": false,
+            "categories": [
+                "Nutty",
+                "Gourmet"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Pistachios",
+                    "quantity": "30g"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "flavour": "Cookies and Cream",
+            "description": "Vanilla ice cream loaded with crushed cookies.",
+            "toppings": [
+                "Oreo Crumbs",
+                "Chocolate Syrup"
+            ],
+            "price": 4.69,
+            "image": "https://example.com/images/cookies_and_cream.png",
+            "isFeatured": true,
+            "categories": [
+                "Crunchy",
+                "Fun"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Cookies",
+                    "quantity": "50g"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "flavour": "Mango",
+            "description": "Refreshing mango ice cream made with real mango pulp.",
+            "toppings": [
+                "Fresh Mango Cubes",
+                "Mint Leaves"
+            ],
+            "price": 4.29,
+            "image": "https://example.com/images/mango.png",
+            "isFeatured": false,
+            "categories": [
+                "Tropical",
+                "Exotic"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Mango Pulp",
+                    "quantity": "100g"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "flavour": "Rocky Road",
+            "description": "Chocolate ice cream with marshmallows and nuts.",
+            "toppings": [
+                "Mini Marshmallows",
+                "Crushed Almonds"
+            ],
+            "price": 5.19,
+            "image": "https://example.com/images/rocky_road.png",
+            "isFeatured": true,
+            "categories": [
+                "Crunchy",
+                "Rich"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Cocoa Powder",
+                    "quantity": "3 tablespoons"
+                },
+                {
+                    "name": "Marshmallows",
+                    "quantity": "30g"
+                },
+                {
+                    "name": "Almonds",
+                    "quantity": "20g"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "flavour": "Blueberry Cheesecake",
+            "description": "Blueberry ice cream with chunks of cheesecake.",
+            "toppings": [
+                "Blueberry Sauce",
+                "Graham Cracker Crumbs"
+            ],
+            "price": 5.79,
+            "image": "https://example.com/images/blueberry_cheesecake.png",
+            "isFeatured": false,
+            "categories": [
+                "Fruity",
+                "Dessert"
+            ],
+            "ingredients": [
+                {
+                    "name": "Milk",
+                    "quantity": "200ml"
+                },
+                {
+                    "name": "Sugar",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Blueberries",
+                    "quantity": "50g"
+                },
+                {
+                    "name": "Cream Cheese",
+                    "quantity": "50g"
+                }
+            ]
+        }
+    ]
+}
