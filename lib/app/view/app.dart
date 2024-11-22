@@ -11,8 +11,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true, colorScheme: MyTheme.lightScheme),
-      darkTheme: ThemeData(useMaterial3: true, colorScheme: MyTheme.darkScheme),
+      theme: ThemeData(useMaterial3: true, colorScheme: Styles.lightScheme),
+      darkTheme: ThemeData(useMaterial3: true, colorScheme: Styles.darkScheme),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       home: const HomeView(),

@@ -8,8 +8,8 @@
                 "Chocolate Chips",
                 "Sprinkles"
             ],
-            "price": 3.99,
-            "image": "https://example.com/images/vanilla.png",
+            "price": 199,
+            "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": true,
             "categories": [
                 "Classic",
@@ -38,8 +38,8 @@
                 "Brownie Chunks",
                 "Chocolate Syrup"
             ],
-            "price": 4.49,
-            "image": "https://example.com/images/chocolate.png",
+            "price": 249,
+            "image": "https://images.unsplash.com/photo-1649067842726-a5c973a3a62c?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": false,
             "categories": [
                 "Rich",
@@ -68,8 +68,8 @@
                 "Whipped Cream",
                 "Fresh Strawberries"
             ],
-            "price": 4.19,
-            "image": "https://example.com/images/strawberry.png",
+            "price": 289,
+            "image": "https://images.unsplash.com/photo-1555529211-3237f6e13d33?q=80&w=2803&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": true,
             "categories": [
                 "Fruity",
@@ -98,8 +98,8 @@
                 "Mint Leaves",
                 "Chocolate Chips"
             ],
-            "price": 4.79,
-            "image": "https://example.com/images/mint_chocolate_chip.png",
+            "price": 179,
+            "image": "https://images.unsplash.com/photo-1542843137-8791a6904d14?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": false,
             "categories": [
                 "Fresh",
@@ -132,8 +132,8 @@
                 "Caramel Drizzle",
                 "Sea Salt"
             ],
-            "price": 4.99,
-            "image": "https://example.com/images/caramel_swirl.png",
+            "price": 219,
+            "image": "https://images.unsplash.com/photo-1619867994225-724b17475220?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": true,
             "categories": [
                 "Sweet",
@@ -162,8 +162,8 @@
                 "Crushed Pistachios",
                 "Honey Drizzle"
             ],
-            "price": 5.49,
-            "image": "https://example.com/images/pistachio.png",
+            "price": 239,
+            "image": "https://images.unsplash.com/photo-1603736029103-dafad0eb0906?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": false,
             "categories": [
                 "Nutty",
@@ -192,8 +192,8 @@
                 "Oreo Crumbs",
                 "Chocolate Syrup"
             ],
-            "price": 4.69,
-            "image": "https://example.com/images/cookies_and_cream.png",
+            "price": 309,
+            "image": "https://images.unsplash.com/photo-1500710684893-8d0d9fbc639e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": true,
             "categories": [
                 "Crunchy",
@@ -222,8 +222,8 @@
                 "Fresh Mango Cubes",
                 "Mint Leaves"
             ],
-            "price": 4.29,
-            "image": "https://example.com/images/mango.png",
+            "price": 249,
+            "image": "https://images.unsplash.com/photo-1591677445540-08028eeb3021?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": false,
             "categories": [
                 "Tropical",
@@ -252,8 +252,8 @@
                 "Mini Marshmallows",
                 "Crushed Almonds"
             ],
-            "price": 5.19,
-            "image": "https://example.com/images/rocky_road.png",
+            "price": 319,
+            "image": "https://images.unsplash.com/photo-1503438805992-a1f1bcaf6ec9?q=80&w=2896&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": true,
             "categories": [
                 "Crunchy",
@@ -290,8 +290,8 @@
                 "Blueberry Sauce",
                 "Graham Cracker Crumbs"
             ],
-            "price": 5.79,
-            "image": "https://example.com/images/blueberry_cheesecake.png",
+            "price": 299,
+            "image": "https://images.unsplash.com/photo-1684135347630-82c37ed5c7b8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             "isFeatured": false,
             "categories": [
                 "Fruity",

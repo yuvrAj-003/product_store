@@ -1,5 +1,6 @@
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:ionicons/ionicons.dart';
 import 'package:store_pro/product_store/views/IcecreamView.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,10 +11,16 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       bottomNavigationBar: NavigationBar(
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.icecream), label: 'icecreams'),
-          NavigationDestination(icon: Icon(Icons.search), label: 'search'),
           NavigationDestination(
-            icon: Icon(Icons.shopping_cart),
+            icon: Icon(Ionicons.ice_cream_outline),
+            label: 'icecreams',
+          ),
+          NavigationDestination(
+            icon: Icon(Ionicons.search_outline),
+            label: 'search',
+          ),
+          NavigationDestination(
+            icon: Icon(Ionicons.bag_outline),
             label: 'shopping',
           ),
         ],

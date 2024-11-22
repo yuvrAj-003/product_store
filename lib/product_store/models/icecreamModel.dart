@@ -28,7 +28,7 @@ class Icecreams extends Product {
   String? flavour;
   String? description;
   List<String>? toppings;
-  double? price;
+  int? price;
   String? image;
   bool? isFeatured;
   List<String>? categories;
@@ -50,7 +50,7 @@ class Icecreams extends Product {
     flavour = json['flavour'] as String;
     description = json['description'] as String;
     toppings = json['toppings'].cast<String>() as List<String>;
-    price = json['price'] as double;
+    price = json['price'] as int;
     image = json['image'] as String;
     isFeatured = json['isFeatured'] as bool;
     categories = json['categories'].cast<String>() as List<String>;

@@ -4,6 +4,8 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:provider/provider.dart';
+import 'package:store_pro/product_store/models/appStateModel.dart';
 
 class AppBlocObserver extends BlocObserver {
   const AppBlocObserver();
@@ -33,5 +35,10 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
   );
   // Add cross-flavor configuration here
 
-  runApp(await builder());
+  runApp(
+    ChangeNotifierProvider<AppStateModel>(
+      create: (context) => AppStateModel()..loadProducts(),
+      child: await builder(),
+    ),
+  );
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:store_pro/product_store/models/icecreamModel.dart';
 import 'package:store_pro/product_store/models/icecreamRepo.dart';
-import 'package:store_pro/product_store/models/product.dart';
+// import 'package:store_pro/product_store/models/product.dart';
 
-class AppStateMode extends ChangeNotifier {
+class AppStateModel extends ChangeNotifier {
   final _shippingCostPerItem = 10;
   final _salesTaxRate = 0.18;
 
@@ -14,8 +14,8 @@ class AppStateMode extends ChangeNotifier {
     return Map.from(_productsInCart);
   }
 
-  List<Product> get availableProducts {
-    return List.from(_availableProducts);
+  List<Icecreams> getProducts() {
+    return _availableProducts;
   }
 
   int get totalCartQuantity {
