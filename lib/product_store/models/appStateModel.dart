@@ -9,7 +9,7 @@ class AppStateModel extends ChangeNotifier {
 
   List<Icecreams> _availableProducts = [];
 
-  final Map<int, int> _productsInCart = <int, int>{};
+  final Map<int?, int> _productsInCart = <int, int>{};
   Map<int, double> get productsInCart {
     return Map.from(_productsInCart);
   }
@@ -24,7 +24,7 @@ class AppStateModel extends ChangeNotifier {
 
   double get subTotalCost {
     return _productsInCart.keys
-        .map((id) => _availableProducts[id].price! * _productsInCart[id]!)
+        .map((id) => _availableProducts[id!].price! * _productsInCart[id]!)
         .fold(0, (sum, prev) => sum + prev);
   }
 
@@ -42,6 +42,9 @@ class AppStateModel extends ChangeNotifier {
   }
 
   void addProductToCart(int productId) {
+    if (_productsInCart[productId] == null) {
+      return;
+    }
     if (_productsInCart.containsKey(productId)) {
       _productsInCart[productId] = 1;
     } else {
