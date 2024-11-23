@@ -14,14 +14,12 @@ class MySearchBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      // controller: controller,
+      controller: controller,
+      focusNode: focusNode,
       decoration: InputDecoration(
         filled: true,
         // search button
-        suffixIcon: IconButton(
-          icon: const Icon(Ionicons.search_outline),
-          onPressed: () {},
-        ),
+        suffixIcon: const Icon(Ionicons.search_outline),
         // background color
         fillColor: const Color(0xFFEEEEEE),
         // border

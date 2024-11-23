@@ -29,14 +29,17 @@ class _SearchViewState extends State<SearchView> {
   @override
   void dispose() {
     // TODO: implement dispose
+    super.dispose();
     _focusNode.dispose();
 
     _controller.dispose();
-    super.dispose();
   }
 
   void _onQueryChanged() {
-    _query = _controller.text;
+    setState(() {
+      _query = _controller.text;
+    });
+    // _query = _controller.text;
   }
 
   Widget _buildSearchBox() {
@@ -52,7 +55,7 @@ class _SearchViewState extends State<SearchView> {
     final filteredProducts = model.search(_query);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('search'),
+        title: const Text('Search'),
       ),
       body: SafeArea(
         child: DecoratedBox(

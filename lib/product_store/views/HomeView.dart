@@ -1,8 +1,9 @@
 // import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:store_pro/product_store/views/CartView.dart';
 // import 'package:store_pro/product_store/views/IcecreamView.dart';
-import 'package:store_pro/product_store/views/SearchView.dart';
+// import 'package:store_pro/product_store/views/SearchView.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -22,11 +23,11 @@ class HomeView extends StatelessWidget {
           ),
           NavigationDestination(
             icon: Icon(Ionicons.bag_outline),
-            label: 'shopping',
+            label: 'cart',
           ),
         ],
       ),
-      body: SearchView(),
+      body: const CartView(),
     );
   }
 }
