@@ -6,11 +6,22 @@ import 'package:store_pro/product_store/models/icecreamRepo.dart';
 class AppStateModel extends ChangeNotifier {
   final _shippingCostPerItem = 10;
   final _salesTaxRate = 0.18;
+  int currentIndex = 0;
+
+  void changeIndex(int index) {
+    currentIndex = index;
+    notifyListeners();
+  }
 
   List<Icecreams> _availableProducts = [];
 
-  final Map<int?, int> _productsInCart = <int, int>{};
-  Map<int, double> get productsInCart {
+  final Map<int, int> _productsInCart = <int, int>{};
+
+  Icecreams getProductById(int id) {
+    return _availableProducts.firstWhere((element) => element.id == id);
+  }
+
+  Map<int, int> get productsInCart {
     return Map.from(_productsInCart);
   }
 
@@ -24,7 +35,7 @@ class AppStateModel extends ChangeNotifier {
 
   double get subTotalCost {
     return _productsInCart.keys
-        .map((id) => _availableProducts[id!].price! * _productsInCart[id]!)
+        .map((id) => _availableProducts[id].price! * _productsInCart[id]!)
         .fold(0, (sum, prev) => sum + prev);
   }
 
@@ -42,15 +53,13 @@ class AppStateModel extends ChangeNotifier {
   }
 
   void addProductToCart(int productId) {
-    if (_productsInCart[productId] == null) {
-      return;
-    }
+    // print(productsInCart);
     if (_productsInCart.containsKey(productId)) {
-      _productsInCart[productId] = 1;
-    } else {
       _productsInCart[productId] = _productsInCart[productId]! + 1;
+    } else {
+      _productsInCart[productId] = 1;
     }
-
+    // print(productsInCart);
     notifyListeners();
   }
 

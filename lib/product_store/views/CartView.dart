@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import 'package:ionicons/ionicons.dart';
 import 'package:provider/provider.dart';
 import 'package:store_pro/product_store/models/appStateModel.dart';
+import 'package:store_pro/product_store/widgets/CartItem.dart';
 import 'package:store_pro/product_store/widgets/InputBoxes.dart';
 
 class CartView extends StatefulWidget {
@@ -12,6 +13,7 @@ class CartView extends StatefulWidget {
 }
 
 class _CartViewState extends State<CartView> {
+  final formKey = GlobalKey<FormState>();
   Widget _buildInput(String query) {
     final inputBox = InputBoxes(
       context: context,
@@ -43,6 +45,7 @@ class _CartViewState extends State<CartView> {
       body: Consumer<AppStateModel>(
         builder: (context, value, child) {
           return ListView(
+            // scrollDirection: ,
             children: [
               Theme(
                 // removing outline
@@ -55,6 +58,7 @@ class _CartViewState extends State<CartView> {
                   title: const Text('Address Details'),
                   children: [
                     Form(
+                      key: formKey,
                       child: Column(
                         children: [
                           Padding(
@@ -87,6 +91,35 @@ class _CartViewState extends State<CartView> {
                   ],
                 ),
               ),
+              const Divider(),
+              if (value.productsInCart.isNotEmpty)
+                Theme(
+                  data: Theme.of(context).copyWith(
+                    expansionTileTheme: const ExpansionTileThemeData(
+                      shape: RoundedRectangleBorder(),
+                    ),
+                  ),
+                  child: ExpansionTile(
+                    initiallyExpanded: true,
+                    title: const Text('Cart Details'),
+                    children: [
+                      ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: value.productsInCart.length,
+                        itemBuilder: (context, index) {
+                          return CardItem(
+                            id: index,
+                            product: value.getProductById(
+                              value.productsInCart.keys.toList()[index],
+                            ),
+                            quantity:
+                                value.productsInCart.values.toList()[index],
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
             ],
           );
         },
