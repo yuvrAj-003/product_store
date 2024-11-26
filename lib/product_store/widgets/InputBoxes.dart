@@ -122,7 +122,6 @@ class InputBoxes {
     );
   }
 
-  /// Time Input
   Widget buildTimeInput() {
     return InkWell(
       onTap: _selectTime,
@@ -137,7 +136,7 @@ class InputBoxes {
         ),
         child: Text(
           _selectedTime != null
-              ? _selectedTime!.format(context as BuildContext)
+              ? _selectedTime!.format(context)
               : 'Select a time',
           style: const TextStyle(fontSize: 16),
         ),
@@ -145,10 +144,10 @@ class InputBoxes {
     );
   }
 
-  // function for select date
+// function for select date
   Future<void> _selectDate() async {
     final selectedDate = await showDatePicker(
-      context: context as BuildContext,
+      context: context,
       initialDate: DateTime.now(),
       firstDate: DateTime(2000),
       lastDate: DateTime(2100),
@@ -157,33 +156,35 @@ class InputBoxes {
     if (selectedDate != null) {
       setState(() {
         _selectedDate = selectedDate;
+        // print('Selected date: ${_selectedDate}'); // Debugging
       });
     }
   }
 
-  // function for select time
+// function for select time
   Future<void> _selectTime() async {
     final selectedTime = await showTimePicker(
-      context: context as BuildContext,
+      context: context,
       initialTime: TimeOfDay.now(),
     );
 
     if (selectedTime != null) {
       setState(() {
         _selectedTime = selectedTime;
+        // print('Selected time: ${_selectedTime!.format(context)}'); // Debugging
       });
     }
   }
 
   /// Generic Input Box Builder
   Widget _buildInputBox({
-    TextInputType keyboardType = TextInputType.text,
-    int maxLines = 1,
-    FormFieldValidator<String>? validator,
     required FormFieldSetter<String> onSaved,
     required ValueChanged<String> onChanged,
     required String label,
     required IoniconsData icon,
+    TextInputType keyboardType = TextInputType.text,
+    int maxLines = 1,
+    FormFieldValidator<String>? validator,
   }) {
     return TextFormField(
       keyboardType: keyboardType,
