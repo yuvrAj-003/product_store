@@ -90,10 +90,10 @@ packages:
     dependency: "direct main"
     description:
       name: change_notifier
-      sha256: "9a50ab5290b93a2f164d20a12998ef10571d57947b47f144296dc53cc24f4f5b"
+      sha256: "58a46e11048baeba53c801fc269f7c3bd4bbc929e69b006435baf25f66050c47"
       url: "https://pub.dev"
     source: hosted
-    version: "0.24.0"
+    version: "0.25.0"
   characters:
     dependency: transitive
     description:
@@ -142,14 +142,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
-  dart_internal:
-    dependency: transitive
-    description:
-      name: dart_internal
-      sha256: "781e0d03812e5b52fdc3f71540b178245021be64d22cbc88da2aee6b45705183"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.2.13"
   diff_match_patch:
     dependency: transitive
     description:
